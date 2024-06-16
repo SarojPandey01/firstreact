@@ -6,6 +6,8 @@ import Productpage from "./page/Productpage"
 import Productdetails from "./page/Productdetails";
 import Cart from "./page/Cart";
 import Register from "./Register";
+import Show from "./context/Show";
+import CartItem from "./redux/CartItem";
 
 
 
@@ -18,7 +20,9 @@ const Myrouter = () => {
             <Route path="/products" element={<Productpage/>}/>
             <Route path="/productdetails/:productId" element={<Productdetails/>}/>
            <Route path="/cart" element={<Cart/>}/>  
-           <Route path="/register" element={<Register/>} />       
+           <Route path="/register" element={<Register/>} /> 
+           <Route path="/context" element={<Show/>}/>  
+           <Route path="/redux/state" element={<CartItem/>}/>    
 
             </Route>
         </Routes>
