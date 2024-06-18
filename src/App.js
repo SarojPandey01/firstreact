@@ -11,10 +11,13 @@ const App = () => {
   return (
     <>
     <Provider store={state}>
+  
 
     <Myrouter/>
 
+
     </Provider>
+    
     </>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import CartChange from './reducer/CartChange'
+import Student from './Student'
+import StudentForm from './StudentForm'
+import CartChange from './CartChange'
 
 const CartItem = () => {
     const data = useSelector(store=>store)
@@ -8,7 +10,10 @@ const CartItem = () => {
     <>
         <h1 className='text-success text-center'>The Number if items in the cart is {data.cartInitial}</h1>
         <CartChange/>
+          <Student/>
+          <StudentForm/>
     </>
+    
   )
 }
 
